@@ -14,7 +14,7 @@ export class BlogCreateComponent implements OnInit {
   public blogBodyHtml: string;
   public blogDescription: string;
   public blogCategory: string;
-  public possibleCategories = ["Comedy", "Action", "Drama", "Technology","Cooking","Travel", "Erotic"];
+  public possibleCategories = ["Comedy", "Action", "Drama", "Technology","Cooking","Travel"];
 
 
   constructor(private blogHttpService: BlogHttpService, private _route: ActivatedRoute, private router: Router, public toastr: ToastrManager) { }
@@ -39,7 +39,7 @@ export class BlogCreateComponent implements OnInit {
         console.log(data);
         this.toastr.successToastr('Blog Posted Susseccfully!', 'Success!');
         setTimeout(() =>{
-          this.router.navigate(['blog',data.data.blogId]);
+          this.router.navigate(['blog', data.blogId]);
         }, 1000)
 
       },

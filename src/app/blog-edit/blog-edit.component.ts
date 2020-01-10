@@ -24,7 +24,7 @@ export class BlogEditComponent implements OnInit {
           
                 data =>{
                   console.log(data);
-                  this.currentBlog = data["data"];
+                  this.currentBlog = data;
                   console.log(this.currentBlog);
                   },
                   

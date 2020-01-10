@@ -29,7 +29,7 @@ export class BlogViewComponent implements OnInit, OnDestroy {
           
                 data =>{
                   console.log(data);
-                  this.currentBlog = data["data"];
+                  this.currentBlog = data;
                   },
                   
                 error =>{

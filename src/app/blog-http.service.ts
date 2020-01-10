@@ -48,7 +48,7 @@ export class BlogHttpService {
   }
 
   public editBlog(blogId, blogData): any {
-    let myResponse = this._http.put(this.baseUrl + '/' + blogId + '/edit' , blogData);
+    let myResponse = this._http.put(this.baseUrl + '/edit' + '/' + blogId, blogData);
     return myResponse;
   }
 }
