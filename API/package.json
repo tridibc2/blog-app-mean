@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.27",
+    "moment-timezone": "^0.5.35",
     "mongoose": "^4.13.19",
     "pino": "^5.15.0",
     "shortid": "^2.2.8"
